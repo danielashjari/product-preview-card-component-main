@@ -26,10 +26,12 @@ $breakpoint_down: (
     }
 }
 
+//turning pixels into rem
 @function rem($pixels, $context: 16){
     @return ($pixels / $context)* 1 rem;
 };
 
+//merging flex box atributes
 @mixin flex_box($display, $direction, $wrap, $justify, $align){
     display: $display;
     flex-direction: $direction;
