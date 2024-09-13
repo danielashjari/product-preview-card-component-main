@@ -2,9 +2,10 @@
   --bg: hsl(156, 42%, 18%);
   --h-text: hsl(212, 21%, 14%);
   --p-text: hsl(228, 12%, 48%);
-  --card0bg: hsl(0, 0%, 100%);
+  --cardbg: hsl(0, 0%, 100%);
   --bttn: hsl(158, 36%, 37%);
   --bttn-hover: hsl(156, 42%, 18%);
+  --bttn-text: hsl(0, 0%, 100%);
   --price: hsl(158, 36%, 37%);
 }
 
@@ -30,8 +31,45 @@ html {
 */
 h1, h2, h3 {
   margin-top: 0rem;
+  color: var(--h-text);
+}
+
+p {
+  color: var(--p-text);
 }
 
 a, a:visited, a:active {
   text-decoration: none;
+}
+
+.card {
+  margin: 8% 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .product_img img {
+  max-inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 340/240;
+  object-fit: cover;
+}
+.card .product_info .perfume {
+  color: var(--p-text);
+}
+.card .product_info .price {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card .product_info .price .final_price {
+  color: var(--price);
+}
+.card .product_info .btn {
+  color: var(--bttn-text);
+  background-color: var(--bttn);
+}
+.card .product_info .btn:hover {
+  background-color: var(--bttn-hover);
 }/*# sourceMappingURL=style.css.map */

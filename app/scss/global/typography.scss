@@ -14,6 +14,11 @@
 */
 h1,h2,h3 {
   margin-top: 0rem;
+  color: var(--h-text);
+}
+
+p{
+  color: var(--p-text);
 }
 
 a, a:visited, a:active{

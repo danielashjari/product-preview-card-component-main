@@ -1,0 +1,45 @@
+.card{
+    margin: 8% 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .product_img{
+        img{
+            max-inline-size: 100%;
+            block-size: auto;
+            aspect-ratio: 340/240;
+            object-fit: cover;
+        }
+    }
+    
+
+    .product_info{
+        .perfume{
+            color: var(--p-text);
+
+        }
+
+        .price{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            .final_price{
+                color: var(--price);
+
+            }
+            .off_price{
+
+            }
+        }
+
+        .btn{
+            color: var(--bttn-text);
+            background-color: var(--bttn);
+            &:hover{
+            background-color: var(--bttn-hover);
+            }
+        }
+    }
+
+}
