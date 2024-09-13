@@ -1,8 +1,8 @@
 :root {
-  --bg: hsl(156, 42%, 18%);
+  --bg: hsl(30, 38%, 92%);
   --h-text: hsl(212, 21%, 14%);
   --p-text: hsl(228, 12%, 48%);
-  --cardbg: hsl(0, 0%, 100%);
+  --card-bg: hsl(0, 0%, 100%);
   --bttn: hsl(158, 36%, 37%);
   --bttn-hover: hsl(156, 42%, 18%);
   --bttn-text: hsl(0, 0%, 100%);
@@ -42,34 +42,51 @@ a, a:visited, a:active {
   text-decoration: none;
 }
 
-.card {
+body {
+  background-color: var(--bg);
+}
+body .card {
+  background-color: var(--card-bg);
   margin: 8% 4%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 0.75rem;
 }
-.card .product_img img {
+body .card .product_img img {
   max-inline-size: 100%;
   block-size: auto;
   aspect-ratio: 340/240;
   object-fit: cover;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
 }
-.card .product_info .perfume {
+body .card .product_info {
+  margin: 1.5 rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+body .card .product_info .perfume {
   color: var(--p-text);
+  font-variant: small-caps;
 }
-.card .product_info .price {
+body .card .product_info .price {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
-.card .product_info .price .final_price {
+body .card .product_info .price .final_price {
   color: var(--price);
 }
-.card .product_info .btn {
+body .card .product_info .price .off_price {
+  margin-left: 1.25 rem;
+}
+body .card .product_info .btn {
   color: var(--bttn-text);
   background-color: var(--bttn);
 }
-.card .product_info .btn:hover {
+body .card .product_info .btn:hover {
   background-color: var(--bttn-hover);
 }/*# sourceMappingURL=style.css.map */

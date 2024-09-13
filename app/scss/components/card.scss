@@ -1,45 +1,57 @@
-.card{
-    margin: 8% 4%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .product_img{
-        img{
-            max-inline-size: 100%;
-            block-size: auto;
-            aspect-ratio: 340/240;
-            object-fit: cover;
+@use '../util' as *; 
+
+body {
+    background-color: var(--bg);
+    .card {
+        background-color: var(--card-bg);
+        margin: 8% 4%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0.75rem;
+        .product_img {
+            img {
+                max-inline-size: 100%;
+                block-size: auto;
+                aspect-ratio: 340/240;
+                object-fit: cover;
+                border-top-left-radius: 0.75rem;
+                border-top-right-radius: 0.75rem;
+
+            }
         }
-    }
-    
 
-    .product_info{
-        .perfume{
-            color: var(--p-text);
-
-        }
-
-        .price{
+        .product_info {
+            margin: rem(24);
             display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-            .final_price{
-                color: var(--price);
+            flex-direction: column;
+            align-items: stretch;
 
+            .perfume {
+                color: var(--p-text);
+                font-variant: small-caps;
             }
-            .off_price{
 
+            .price {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                .final_price {
+                    color: var(--price);
+                }
+                .off_price {
+                    margin-left: rem(20);
+                }
             }
-        }
 
-        .btn{
-            color: var(--bttn-text);
-            background-color: var(--bttn);
-            &:hover{
-            background-color: var(--bttn-hover);
+            .btn {
+                color: var(--bttn-text);
+                background-color: var(--bttn);
+                &:hover {
+                    background-color: var(--bttn-hover);
+                }
             }
         }
     }
-
 }
