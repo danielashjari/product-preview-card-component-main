@@ -32,10 +32,18 @@ html {
 h1, h2, h3 {
   margin-top: 0rem;
   color: var(--h-text);
+  font-family: "Fraunces", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 p {
   color: var(--p-text);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 a, a:visited, a:active {
@@ -79,9 +87,15 @@ body .card .product_info .price {
 }
 body .card .product_info .price .final_price {
   color: var(--price);
+  font-family: "Fraunces", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
 }
 body .card .product_info .price .off_price {
   margin-left: 1.25rem;
+  text-decoration: line-through;
 }
 body .card .product_info .btn {
   color: var(--bttn-text);
