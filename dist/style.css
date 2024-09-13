@@ -8,6 +8,15 @@
   --price: hsl(158, 36%, 37%);
 }
 
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 /*
 .fraunces-<uniquifier> {
     font-family: "Fraunces", system-ui;
@@ -18,4 +27,11 @@
       "SOFT" 0,
       "WONK" 0;
   }
-*//*# sourceMappingURL=style.css.map */
+*/
+h1, h2, h3 {
+  margin-top: 0rem;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
