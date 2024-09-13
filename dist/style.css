@@ -62,7 +62,7 @@ body .card .product_img img {
   border-top-right-radius: 0.75rem;
 }
 body .card .product_info {
-  margin: 1.5 rem;
+  margin: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -81,7 +81,7 @@ body .card .product_info .price .final_price {
   color: var(--price);
 }
 body .card .product_info .price .off_price {
-  margin-left: 1.25 rem;
+  margin-left: 1.25rem;
 }
 body .card .product_info .btn {
   color: var(--bttn-text);

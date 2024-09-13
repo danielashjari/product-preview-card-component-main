@@ -28,7 +28,7 @@ $breakpoint_down: (
 
 //turning pixels into rem
 @function rem($pixels, $context: 16){
-    @return calc($pixels / $context)* 1 rem;
+    @return calc($pixels / $context)* 1rem;
 };
 
 //merging flex box atributes
