@@ -54,6 +54,12 @@ body {
             .btn {
                 color: var(--bttn-text);
                 background-color: var(--bttn);
+                height: rem(45);
+                border-radius: 0.5rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
                 &:hover {
                     background-color: var(--bttn-hover);
                 }
