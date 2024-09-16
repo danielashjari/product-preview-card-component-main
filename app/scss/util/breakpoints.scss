@@ -32,10 +32,8 @@ $breakpoint_down: (
 };
 
 //merging flex box atributes
-@mixin flex_box($display, $direction, $wrap, $justify, $align){
+@mixin flex_box($display, $direction, $align){
     display: $display;
     flex-direction: $direction;
-    flex-wrap: $wrap;
-    justify-content: $justify;
     align-items: $align;
 };

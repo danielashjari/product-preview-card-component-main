@@ -3,16 +3,12 @@
 body {
     background-color: var(--bg);
     @include breakpoint(medium){
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+        @include flex_box(flex, column, center)
     }
     .card {
         background-color: var(--card-bg);
         margin: 8% 4%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex_box(flex, column, center);
         border-radius: 0.75rem;
         @include breakpoint(medium){
             flex-direction: row;
@@ -44,9 +40,7 @@ body {
 
         .product_info {
             margin: rem(24);
-            display: flex;
-            flex-direction: column;
-            align-items: stretch;
+            @include flex_box(flex, column, stretch);
             @include breakpoint(medium){
                 margin: 0 1.5rem;
             }
@@ -60,10 +54,8 @@ body {
             }
 
             .price {
-                display: flex;
-                flex-direction: row;
+                @include flex_box(flex, row, center);
                 justify-content: flex-start;
-                align-items: center;
                 .final_price {
                     color: var(--price);
                     font-family: "Fraunces", system-ui;
@@ -86,10 +78,8 @@ body {
                 background-color: var(--bttn);
                 height: rem(45);
                 border-radius: 0.5rem;
-                display: flex;
-                flex-direction: row;
+                @include flex_box(flex, row, center);
                 justify-content: center;
-                align-items: center;
                 &:hover {
                     background-color: var(--bttn-hover);
                 }
