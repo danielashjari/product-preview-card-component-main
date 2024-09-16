@@ -53,6 +53,13 @@ a, a:visited, a:active {
 body {
   background-color: var(--bg);
 }
+@media (min-width: 40em) {
+  body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 body .card {
   background-color: var(--card-bg);
   margin: 8% 4%;
@@ -61,13 +68,31 @@ body .card {
   align-items: center;
   border-radius: 0.75rem;
 }
+@media (min-width: 40em) {
+  body .card {
+    flex-direction: row;
+    max-width: 37.5rem;
+    align-self: center;
+    aspect-ratio: 600/450;
+  }
+}
 body .card .product_img img {
   max-inline-size: 100%;
   block-size: auto;
+  height: 320;
   aspect-ratio: 340/240;
   object-fit: cover;
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
+}
+@media (min-width: 40em) {
+  body .card .product_img img {
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.75rem;
+    height: max-content;
+    aspect-ratio: 300/535;
+  }
 }
 body .card .product_info {
   margin: 1.5rem;
@@ -75,9 +100,19 @@ body .card .product_info {
   flex-direction: column;
   align-items: stretch;
 }
+@media (min-width: 40em) {
+  body .card .product_info {
+    margin: 0 1.5rem;
+  }
+}
 body .card .product_info .perfume {
   color: var(--p-text);
   font-variant: small-caps;
+}
+@media (min-width: 40em) {
+  body .card .product_info .perfume {
+    margin-bottom: 1rem;
+  }
 }
 body .card .product_info .price {
   display: flex;
@@ -96,6 +131,11 @@ body .card .product_info .price .final_price {
 body .card .product_info .price .off_price {
   margin-left: 1.25rem;
   text-decoration: line-through;
+}
+@media (min-width: 40em) {
+  body .card .product_info .price {
+    margin-bottom: 1.5rem;
+  }
 }
 body .card .product_info .btn {
   color: var(--bttn-text);
