@@ -76,12 +76,14 @@ body .card {
     aspect-ratio: 600/450;
   }
 }
+body .card .product_img {
+  height: 100%;
+}
 body .card .product_img img {
+  max-width: 100%;
   max-inline-size: 100%;
   block-size: auto;
-  height: 320;
-  aspect-ratio: 340/240;
-  object-fit: cover;
+  height: max-content;
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
 }
@@ -90,8 +92,8 @@ body .card .product_img img {
     border-top-left-radius: 0.75rem;
     border-top-right-radius: 0;
     border-bottom-left-radius: 0.75rem;
-    height: max-content;
-    aspect-ratio: 300/535;
+    height: 100%;
+    max-width: 100%;
   }
 }
 body .card .product_info {
